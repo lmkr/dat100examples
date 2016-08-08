@@ -2,9 +2,9 @@ package no.hib.dat100;
 
 /* FinnOrdIFil.java
 *
-* Programmet leser inn et filnavn og et søkeord
+* Programmet leser inn et filnavn og et sï¿½keord
 * fra brukeren, og skriver ut alle de linjene i
-* filen som inneholder søkeordet, påført linjenr.
+* filen som inneholder sï¿½keordet, pï¿½fï¿½rt linjenr.
 */
 import java.io.*;
 import static java.lang.System.*;
@@ -15,7 +15,7 @@ public class FinnOrdiFil {
 	public static void main(String[] args) {
 		
 		String filnavn = showInputDialog("Filnavn:");
-		String søkeord = showInputDialog("Søkeord:");
+		String ord = showInputDialog("SÃ¸keord:");
 		
 		try {
 			
@@ -24,7 +24,7 @@ public class FinnOrdiFil {
 			int linjenr = 1;
 			
 			while (linje != null) {
-				if (linje.contains(søkeord))
+				if (linje.contains(ord))
 					out.println(linjenr + ":" + linje);
 				linje = fil.readLine();
 				linjenr = linjenr + 1;
