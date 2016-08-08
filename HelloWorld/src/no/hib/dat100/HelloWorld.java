@@ -1,4 +1,6 @@
 
+package no.hib.dat100;
+
 public class HelloWorld {
 
 	public static void main(String[] args) {
