@@ -15,7 +15,7 @@ public class FinnOrdiFil {
 	public static void main(String[] args) {
 		
 		String filnavn = showInputDialog("Filnavn:");
-		String ord = showInputDialog("Søkeord:");
+		String ord = showInputDialog("Ord:");
 		
 		try {
 			
