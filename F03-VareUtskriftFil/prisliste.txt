@@ -1,0 +1,4 @@
+VARESLAG     PRIS  
+Torsk        150.50
+Uer          120.20
+Sild          89.90
