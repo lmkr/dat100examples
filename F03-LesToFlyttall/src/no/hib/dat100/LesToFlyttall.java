@@ -1,7 +1,7 @@
 package no.hib.dat100;
 import java.util.Scanner;
 
-public class LesToFlytTall {
+public class LesToFlyttall {
 
 	/**
 	 * @param args
