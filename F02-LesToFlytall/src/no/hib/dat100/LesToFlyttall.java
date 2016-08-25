@@ -15,7 +15,7 @@ public class LesToFlyttall {
 		System.out.print("Oppgi verdien til y: ");
 		tall2 = tastatur.nextDouble();
 		double produkt = tall1*tall2;
-		System.out.println("Produktet av x og y er " + produkt);
+		System.out.println("Produktet av x og y er " + produkt);		
 
 	}
 
