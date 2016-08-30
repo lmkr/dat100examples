@@ -13,7 +13,7 @@ public class Karakter {
 
 		switch (karakter) {
 			case "A":
-				melding = "Svært bra";
+				melding = "Svï¿½rt bra";
 				break;
 			case "B":
 				melding = "Meget bra";
@@ -31,6 +31,7 @@ public class Karakter {
 			default:
 				melding = "ugyldig karakter";
 		}
+		
 		showMessageDialog(null, melding);
 	}
 
