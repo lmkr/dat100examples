@@ -13,13 +13,14 @@ public class Karakter {
 
 		switch (karakter) {
 			case "A":
-				melding = "Svï¿½rt bra";
+				melding = "Svært bra";
 				break;
 			case "B":
 				melding = "Meget bra";
 				break;
 			case "C":
 				melding = "Bra";
+				break;
 			case "D":
 				melding = "Noe bra";
 				break;
