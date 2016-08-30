@@ -20,6 +20,7 @@ public class Karakter {
 				break;
 			case "C":
 				melding = "Bra";
+				break;
 			case "D":
 				melding = "Noe bra";
 				break;
