@@ -20,6 +20,7 @@ public class Karakter {
 				break;
 			case "C":
 				System.out.println("Bra");
+				break;
 			case "D":
 				System.out.println("Noe bra");
 				break;
