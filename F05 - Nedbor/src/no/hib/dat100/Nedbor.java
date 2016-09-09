@@ -1,3 +1,5 @@
+package no.hib.dat100;
+
 
 /* 
  * ”Lag et lite program som lar brukeren taste inn nedbørsmengde for de 
