@@ -13,6 +13,6 @@ import java.util.Scanner;
 	       r[i] = Math.sqrt(d); // metodekall– aktuell parameter d
 	    }
 	    return r; // retur
-	  }//metode.
+	  }//metode
 	  
 	}//class
