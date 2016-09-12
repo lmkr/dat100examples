@@ -1,6 +1,6 @@
 package no.hib.dat100;
 import java.util.Scanner;
-	
+	//to push
 	public class Kalkulator {
 	  double[] beregnTiRoetter() {
 	    // leser ti tall fra terminal, regner ut kvadratrot og
