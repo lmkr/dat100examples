@@ -1,5 +1,8 @@
 package no.hib.dat100;
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/lmkr/dat100examples
 
 /* 
  * ”Lag et lite program som lar brukeren taste inn nedbørsmengde for de 
