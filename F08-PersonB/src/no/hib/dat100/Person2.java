@@ -1,5 +1,5 @@
 package no.hib.dat100;
-
+//test
 public class Person2 {
 	String navn;
 
