@@ -4,8 +4,12 @@
  */
 package no.hib.dat100;
 
+/**
+ * @author hbs
+ *
+ */
 public class Konto {
-	private static int nummer = 0;
+	private  static int nummer = 0;
 	private String eier;
 	private String adresse;
 	private int kontonummer;
@@ -25,8 +29,32 @@ public class Konto {
 		bestemKontonummer();
 		
 	}
+		
 	
-	
+	public static int getNummer() {
+		return nummer;
+	}
+
+	public static void setNummer(int nummer) {
+		Konto.nummer = nummer;
+	}
+
+	public String getEier() {
+		return eier;
+	}
+
+	public void setEier(String eier) {
+		this.eier = eier;
+	}
+
+	public String getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
+	}
+
 	public int getKontonummer() {
 		return kontonummer;
 	}
@@ -43,36 +71,17 @@ public class Konto {
 		this.saldo = saldo;
 	}
 
-	void settInn(int innskudd) {
+	public void settInn(int innskudd) {
 		saldo = saldo + innskudd;
 	}
 
-	int giSaldo() {
-		return saldo;
-	}
-
-	String getEier() {
-		return eier;
-	}
-
-	String getAdresse() {
-		return adresse;
-	}
-
-	void setEier(String e) {
-		eier = e;
-	}
-
-	void setAdresse(String a) {
-		adresse = a;
-	}
-	
-	void bestemKontonummer() {
+		
+	public void bestemKontonummer() {
 		nummer++;
 		kontonummer = nummer;
 	}
 		
-		boolean taUt(int uttak) {
+	public boolean taUt(int uttak) {
 			if (uttak > saldo){
 				return false;
 			}
@@ -80,7 +89,7 @@ public class Konto {
 			return true;
 		}
 
-	boolean overforTilAnnenKonto(Konto tilKonto, int belop) {
+	public boolean overforTilAnnenKonto(Konto tilKonto, int belop) {
 		if (taUt(belop)) {
 			tilKonto.settInn(belop);
 			return true;
@@ -89,7 +98,7 @@ public class Konto {
 		}
 	}
 
-	void skrivTilstand() {
+	public void skrivTilstand() {
 		System.out.print("Eier: " + eier);
 		System.out.print("\tAdresse: " + adresse);
 		System.out.print("\t Kontonummer: " + kontonummer);

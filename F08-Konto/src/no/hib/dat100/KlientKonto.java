@@ -9,17 +9,17 @@ public class KlientKonto {
     
     k1.settInn(innskudd);
   
-    System.out.println("A: Min saldo er = " + k1.giSaldo());
+    System.out.println("A: Min saldo er = " + k1.getSaldo());
 
     k1.settInn(1000);
-    System.out.println("B: Min saldo er = " + k1.giSaldo());
+    System.out.println("B: Min saldo er = " + k1.getSaldo());
 
     k1.settInn(500);
-    System.out.println("C: Min saldo er = " + k1.giSaldo());
+    System.out.println("C: Min saldo er = " + k1.getSaldo());
     
     boolean overfort = k1.overforTilAnnenKonto(k2, 1000);
     if(overfort){
-        System.out.println("Overført fra kontonummer " + k1.getKontonummer() + " til kontonummer " + k2.getKontonummer() + " beløp " + k2.giSaldo());
+        System.out.println("Overført fra kontonummer " + k1.getKontonummer() + " til kontonummer " + k2.getKontonummer() + " beløp " + k2.getSaldo());
     }
     else{
         System.out.println("Ble ikke overført");
