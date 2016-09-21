@@ -15,14 +15,14 @@ public class Konto {
 	private int kontonummer;
 	private int saldo;
 
-	Konto() {
+	public Konto() {
 		eier = "";
 		adresse = "";
 		saldo = 0;
 		bestemKontonummer();
 	}
 
-	Konto(String eier,String adresse, int saldo) {
+	public Konto(String eier,String adresse, int saldo) {
 		this.eier = eier;
 		this.adresse = adresse;
 		this.saldo = saldo;
@@ -34,11 +34,13 @@ public class Konto {
 	public static int getNummer() {
 		return nummer;
 	}
-
+	
+    /* Bør utgå i denne problemstillingen
 	public static void setNummer(int nummer) {
 		Konto.nummer = nummer;
 	}
-
+     */
+	
 	public String getEier() {
 		return eier;
 	}
@@ -58,11 +60,13 @@ public class Konto {
 	public int getKontonummer() {
 		return kontonummer;
 	}
-
+	
+   /* Bør unngå i denne problemstillingen
 	public void setKontonummer(int kontonummer) {
 		this.kontonummer = kontonummer;
 	}
-
+    */
+	
 	public int getSaldo() {
 		return saldo;
 	}

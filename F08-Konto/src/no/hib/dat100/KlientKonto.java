@@ -19,7 +19,7 @@ public class KlientKonto {
     
     boolean overfort = k1.overforTilAnnenKonto(k2, 1000);
     if(overfort){
-        System.out.println("Overført fra kontonummer " + k1.getKontonummer() + " til kontonummer " + k2.getKontonummer() + " beløp " + k2.getSaldo());
+        System.out.println("Overført fra kontonummer " + k1.getKontonummer() + " til kontonummer " + k2.getKontonummer());
     }
     else{
         System.out.println("Ble ikke overført");
