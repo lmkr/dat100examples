@@ -1,7 +1,7 @@
 package no.hib.dat100;
-
+//test
 public class Palindrom {
-
+	
 	public static void main(String[] args) {
 		String s = "axxna";
 
