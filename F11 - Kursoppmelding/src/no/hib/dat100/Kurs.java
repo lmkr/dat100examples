@@ -68,3 +68,4 @@ public void meldPåStudent(Student s){
 	
 
 }//class
+

@@ -7,5 +7,4 @@ public class Studentregister {
 		institutt.lesFraFil();
 		institutt.meny();
 	}
-
 }
