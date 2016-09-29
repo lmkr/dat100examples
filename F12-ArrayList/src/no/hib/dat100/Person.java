@@ -67,6 +67,12 @@ public class Person {
 		System.out.print("\ttelefonnr: " + telefonnr);
 		System.out.println("\n");
 	}
+
 	
+	@Override
+	public boolean equals(Object obj) {		
+		Person other = (Person) obj;		
+		return telefonnr == other.telefonnr;		
+	}	
 
 }// class

@@ -18,7 +18,7 @@ public class KlientTelefonbok {
 
 		Telefonbok tlfliste = new Telefonbok(); 
 		
-		//Registerering
+		//Registrering
 		for(int i = 0; i < PERSONTABELL.length; i++){
 			tlfliste.settInn(PERSONTABELL[i]);
 		}
@@ -61,8 +61,7 @@ public class KlientTelefonbok {
 			System.out.println("Ingen registert");
 		}else{
 			System.out.println("feil ved sletting av alle");
-		}
-		
+		}		
 				
 	}
 
