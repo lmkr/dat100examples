@@ -19,7 +19,8 @@ public class KlientPersonsamling {
 				samling.leggTilBak(PERSONTABELL[i]);
 			}
 			//TODO
-			//Lag kall til metoder for å legge til, søke og slette og se om det virker
+			//Lag kall til metoder for å legge til,søke og slette og se om det virker
+			// Ta inn lesing også!!
 	 }	
 			
 	}//class
