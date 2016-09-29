@@ -18,6 +18,7 @@ public class KlientPersonsamling {
 			for(int i = 0; i < PERSONTABELL.length; i++){
 				samling.leggTilBak(PERSONTABELL[i]);
 			}
+			
 			//TODO
 			//Lag kall til metoder for å legge til,søke og slette og se om det virker
 			// Ta inn lesing også!!
