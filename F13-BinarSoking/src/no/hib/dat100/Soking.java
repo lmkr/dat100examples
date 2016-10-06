@@ -36,28 +36,9 @@ public class Soking {
 		}
 	}// metode
 
-	
-	public static int binaerSok2(int[] data, int min, int maks, int el) {
-		int resultat;
-		// Returnerer indeksen til målelementet hvis det fins ellers -1
-		if (min > maks) { // basistilfelle, ingen element
-			resultat = -1;
-		}
-		int midten = (min + maks) / 2;
-		int midtTall = data[midten];
-		if (el == midtTall) { // basistilfelle, finner elementet
-			resultat = midten;
-		}
-		if (el < midtTall) {// ( vil her også fungere med else if)
-			resultat= binaerSok(data, min, midten - 1, el);
-		} else { // resultat > 0
-			resultat = binaerSok(data, midten + 1, maks, el);
-		}
-		return resultat;
-	}// metode
-	
+		
 	/* Ikke rekursiv binærsøk som returnerer indeks */
-	public static int binaerSok3(int[] data, int min, int maks, int el) {
+	public static int binaerSok2(int[] data, int min, int maks, int el) {
 		// Returnerer indeksen til målelementet hvis det fins ellers -1
 		int forste = min;
 		int siste = maks;

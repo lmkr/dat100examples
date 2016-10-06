@@ -13,9 +13,9 @@ public class KlientSok {
 		int element = tastatur.nextInt();
 
 		/* Rekursiv binærsøking som returnerer indeksen, -1 ved ikke-funn */
-		System.out.println("\nUtskrift fra ikke rekursiv binaersoking som returnerer indeksen, -1 ved ikke-funn.");
+		System.out.println("\nUtskrift fra rekursiv binaersoking som returnerer indeksen, -1 ved ikke-funn.");
 		int ind = Soking.binaerSok(tab, 0, tab.length - 1, element); 
-		//System.out.println("indeksen er " + ind);
+		System.out.println("indeksen er " + ind);
 		if (ind > -1) {
 			System.out.print(tab[ind]);
 			System.out.println(" er med");
@@ -24,28 +24,13 @@ public class KlientSok {
 			System.out.println(" er ikke med");
 		}
 		// -------------------------------------------------------------------------------------
-		/*
-		 * Rekursiv binærsøking som returnerer indeksen, -1 ved ikke-funn
-		 */
-		System.out.println("\nUtskrift fra rekursiv binaersoking som returnerer indeksen, -1 ved ikke-funn.");
-
-		ind = Soking.binaerSok2(tab, 0, tab.length - 1, element);
-
-		if (ind > -1) {
-			System.out.print(tab[ind]);
-			System.out.println(" er med");
-		} else {
-			System.out.print(element);
-			System.out.println(" er ikke med");
-		}
 		
 		/*
 		 * Ikke-rekursiv binærsøking som returnerer indeksen, -1 ved ikke-funn
 		 */
-		System.out.println("\nUtskrift fra rekursiv binaersoking som returnerer indeksen, -1 ved ikke-funn.");
-
-		ind = Soking.binaerSok3(tab, 0, tab.length - 1, element);
-
+		System.out.println("\nUtskrift fra ikke-rekursiv binaersoking som returnerer indeksen, -1 ved ikke-funn.");
+		ind = Soking.binaerSok2(tab, 0, tab.length - 1, element);
+		System.out.println("indeksen er " + ind);
 		if (ind > -1) {
 			System.out.print(tab[ind]);
 			System.out.println(" er med");
