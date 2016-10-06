@@ -39,7 +39,8 @@ public class Personsamling {
 	      int indeks = finn(person);
 	      if (indeks != -1){
 	          resultat = samling[indeks];
-	          samling[indeks] = samling[antall];
+	          samling[indeks] = samling[antall-1]; //korr.
+	          //samling[antall-1] = null;//kan sløyfes
 	          antall--; 
 	        
 	      }//if

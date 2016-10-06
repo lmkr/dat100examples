@@ -54,6 +54,6 @@ public class Person {
 	@Override
 	public boolean equals(Object obj) {		
 		Person other = (Person) obj;		
-		return tlfnr == other.tlfnr;		
+		return tlfnr == other.getTlfnr();		
 	}	
 }
