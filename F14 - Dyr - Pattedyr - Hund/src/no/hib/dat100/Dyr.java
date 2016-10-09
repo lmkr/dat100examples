@@ -1,6 +1,5 @@
 package no.hib.dat100;
 
-
 public class Dyr {
 
 	public Dyr() {

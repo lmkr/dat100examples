@@ -11,7 +11,6 @@ public class Main {
 		strek();
 		Hund nn = new Hund();
 		strek();
-
 	}
 
 	private static void strek() {

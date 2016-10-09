@@ -12,4 +12,3 @@ public class Pattedyr extends Dyr {
 	}
 
 }
-
