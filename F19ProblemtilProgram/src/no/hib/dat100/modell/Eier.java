@@ -56,4 +56,28 @@ public class Eier {
 	public int getFodselsnummer() {
 		return fodselsnummer;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + fodselsnummer;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Eier other = (Eier) obj;
+		if (fodselsnummer != other.fodselsnummer)
+			return false;
+		return true;
+	}
+	
+	
 }

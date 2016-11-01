@@ -89,5 +89,32 @@ public abstract class Eiendom {
 	 */
 	public ArrayList<Eier> getEiere() {
 		return eiere;
-	}	
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + bns;
+		result = prime * result + gns;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Eiendom other = (Eiendom) obj;
+		if (bns != other.bns)
+			return false;
+		if (gns != other.gns)
+			return false;
+		return true;
+	}
+	
+	
 }
