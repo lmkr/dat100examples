@@ -2,7 +2,7 @@ package no.hib.dat100.modell;
 
 
 /**
- * Klasse for representasjon av næringseiendommer.
+ * Klasse for representasjon av nï¿½ringseiendommer.
  * @author Lars Kristensen
  * @version 1.0
  */
@@ -12,8 +12,8 @@ public class NeringsEiendom extends Eiendom {
 	private int orgnr;
 	
 	/**
-	 * Konstruer næringseiendomsobjekt.
-	 * @param gns Gårdsnummer
+	 * Konstruer naeringseiendomsobjekt.
+	 * @param gns Gaardsnummer
 	 * @param bns Bruksnummer
 	 * @param orgnr Organisasjonsnummer
 	 */

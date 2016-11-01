@@ -12,10 +12,10 @@ public class UtleieEiendom extends Eiendom {
 	private int leie;
 	/**
 	 * Konstruer utleieeiendom.
-	 * @param gns Gårdsnummer
+	 * @param gns Gaardsnummer
 	 * @param bns Bruksnummer
-	 * @param leierfodselsnummer fødselsnummer på leier
-	 * @param leie leie per måned
+	 * @param leierfodselsnummer fodselsnummer paa leier
+	 * @param leie leie per maaned
 	 */
 	public UtleieEiendom(int gns, int bns, int leierfodselsnummer, int leie) {
 		super(gns,bns);

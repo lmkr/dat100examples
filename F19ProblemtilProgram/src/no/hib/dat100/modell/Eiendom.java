@@ -20,7 +20,7 @@ public abstract class Eiendom {
 
 	/**
 	 * Konstruer Eiendoms objekt.
-	 * @param gns Gårdsnummer
+	 * @param gns Gaardsnummer
 	 * @param bns Bruksnummer
 	 */
 	public Eiendom(int gns, int bns) {
@@ -31,8 +31,8 @@ public abstract class Eiendom {
 	}
 
 	/**
-	 * Hent gårdsnummer for eiendom.
-	 * @return Gårdsnummer
+	 * Hent gaardsnummer for eiendom.
+	 * @return Gaardsnummer
 	 */
 	public int getGns() {
 		return gns;
@@ -47,8 +47,8 @@ public abstract class Eiendom {
 	}
 
 	/**
-	 * Register en ny eier på eiendommen (legges til).
-	 * @param nyeier Eier som skal registreres på eiendom
+	 * Register en ny eier paa eiendommen (legges til).
+	 * @param nyeier Eier som skal registreres paa eiendom
 	 */
 	public void registrerEier(Eier nyeier) {
 		eiere.add(nyeier);
@@ -65,7 +65,7 @@ public abstract class Eiendom {
 
 		// sjekk om nabo eiendom finnes allerede
 		for (Eiendom eiendom : naboer)
-			sattinn = (eiendom == naboeiendom); //OVERVEI - sjekk på gns/bns
+			sattinn = (eiendom == naboeiendom); //OVERVEI - sjekk pï¿½ gns/bns
 
 		// sett inn hvis plass - OVERVEI bruk tabell med eksplisitt antall
 		if (!sattinn) {
@@ -85,7 +85,7 @@ public abstract class Eiendom {
 	
 	/**
 	 * Hent eiere for eiendommen.
-	 * @return listen av eiere på eiendommen
+	 * @return listen av eiere pa eiendommen
 	 */
 	public ArrayList<Eier> getEiere() {
 		return eiere;

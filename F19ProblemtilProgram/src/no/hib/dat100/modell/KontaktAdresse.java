@@ -19,8 +19,8 @@ public class KontaktAdresse {
 	/**
 	 * Konstruerer kontaktadresse objekt.
 	 * @param vei vei for kontaktadressen
-	 * @param nummer nummer på veien
-	 * @param postnummer postnummer på by
+	 * @param nummer nummer paa veien
+	 * @param postnummer postnummer paa by
 	 * @param by by for adressen
 	 * @param land land for addressen
 	 */
