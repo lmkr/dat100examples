@@ -2,6 +2,10 @@ package no.hib.dat100.modell;
 
 import java.util.ArrayList;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+
+import org.junit.Test;
 
 /**
  * Simpel test klasse for eiendomsregister.
@@ -10,7 +14,8 @@ import java.util.ArrayList;
  */
 public class EiendomTester {
 
-	public static void main(String[] args) {
+	@Test
+	public void EnkelTest() {
 
 		// opprett test objekter
 		EiendomsRegister register = new EiendomsRegister("bergen");
@@ -34,17 +39,20 @@ public class EiendomTester {
 		ue.registrerNabo(ne);
 		
 		// hent ut informasjon og sjekk
-		System.out.println(register.finnEiendom(10, 10) == ne);
+		assertEquals(ne,register.finnEiendom(10, 10));
+		
 		ArrayList<Eier> neeiere = register.finnEiendom(10, 10).getEiere();
 		
-		System.out.println(neeiere.size() == 1);
-		System.out.println(neeiere.get(0) == bente);
-
-		System.out.println(register.finnEiendom(10, 20) == ue);
+		assertEquals(1,neeiere.size());
+		assertEquals(bente,neeiere.get(0));
+		
+		assertEquals(ue,register.finnEiendom(10, 20));
+		
 		ArrayList<Eier> ueeiere = register.finnEiendom(10, 20).getEiere();
 		
-		System.out.println(ueeiere.size() == 1);
-		System.out.println(ueeiere.get(0) == odd);
+		assertEquals(1,ueeiere.size());
+		assertEquals(odd,ueeiere.get(0));
+		
 	}
 
 }
