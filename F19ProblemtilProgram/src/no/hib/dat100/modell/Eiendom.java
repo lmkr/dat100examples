@@ -65,7 +65,7 @@ public abstract class Eiendom {
 
 		// sjekk om nabo eiendom finnes allerede
 		for (Eiendom eiendom : naboer)
-			sattinn = (eiendom == naboeiendom); //OVERVEI - sjekk p� gns/bns
+			sattinn = (eiendom.equals(naboeiendom)); 
 
 		// sett inn hvis plass - OVERVEI bruk tabell med eksplisitt antall
 		if (!sattinn) {
