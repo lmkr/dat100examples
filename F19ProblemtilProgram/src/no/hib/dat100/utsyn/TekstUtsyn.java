@@ -22,7 +22,7 @@ public class TekstUtsyn {
 	final private static int NYEIEREIENDOM = 4;
 
 	final private static int REGISTRERNABO = 5;
-	final private static int FINNEIERE= 6;
+	final private static int FINNEIERE = 6;
 	final private static int FINNLEIER = 7;
 	
 	final private static String SEPERATOR = "------------------------------------";
@@ -43,7 +43,7 @@ public class TekstUtsyn {
 			out.outln(SEPERATOR);
 			out.outln("Administrasjon av eiendommer");
 			out.outln(SEPERATOR);
-			out.outln("(1) - Ny næringseiendom");
+			out.outln("(1) - Ny nÃ¦ringseiendom");
 			out.outln("(2) - Ny utleieeiendom");
 			out.outln("(3) - Ny eier");
 			out.outln("(4) - Ny eier for eiendom");
@@ -87,7 +87,7 @@ public class TekstUtsyn {
 
 	public void nyNeringsEiendom() {
 
-		out.outln("nyNæringsEiendom");
+		out.outln("nyNÃ¦ringsEiendom");
 		
 		EID eid = new EID();
 		eid.readEID(in, out);
@@ -213,7 +213,7 @@ public class TekstUtsyn {
 		int fodselsnummer = controller.finnLeier(eid.gns, eid.bns);
 		
 		if (fodselsnummer >= 0)
-			out.outln("Leier fødselsnummer: " + fodselsnummer);
+			out.outln("Leier fÃ¸dselsnummer: " + fodselsnummer);
 		else
 			out.outln("finnLeier feilet");
 	}

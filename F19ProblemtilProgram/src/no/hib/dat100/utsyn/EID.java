@@ -3,14 +3,14 @@ package no.hib.dat100.utsyn;
 import easyIO.In;
 import easyIO.Out;
 
-// hjelpeklasse for innlesning av gårds- og bruksnummer
+// hjelpeklasse for innlesning av gï¿½rds- og bruksnummer
 public class EID {
 
 	int gns; // OVERVEI private og get-metode
 	int bns;
 
 	public void readEID(In in, Out out) {
-		out.out("Gårdsnummer : ");
+		out.out("GÃ¥rdsnummer : ");
 		gns = in.inInt();
 
 		out.out("Bruksnummer : ");

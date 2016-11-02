@@ -17,14 +17,16 @@ public class EiendomTester {
 	@Test
 	public void EnkelTest() {
 
-		// opprett test objekter
+		// opprett test register
 		EiendomsRegister register = new EiendomsRegister("bergen");
 		
 		NeringsEiendom ne = new NeringsEiendom(10,10,202020);
 		UtleieEiendom ue = new UtleieEiendom(10,20,1096,10000);
 		
+		// legg eiendommer inn i register - etablerer forbindelser mellom objekt
 		register.registrerEiendom(ne);
 		register.registrerEiendom(ue);
+		
 		
 		KontaktAdresse ka1 = new KontaktAdresse("Nymarksveien", 42, 5020, "Bergen", "Norge");
 		KontaktAdresse ka2 = new KontaktAdresse("Fyllingsveien", 84, 5120, "Fyllingen", "Bahamas");
@@ -32,13 +34,15 @@ public class EiendomTester {
 		Eier bente = new Eier("Bente Rask", 1741, ka1);
 		Eier odd = new Eier("Odd Vanden", 1560, ka2);
 		
+		// etablerer forbindelser mellom eier og adresse objekter
 		register.registrerEier(bente, 10,10);
 		register.registrerEier(odd, 10, 20);
 		
+		// etablerer forbindelser mellom eiendomsobjekter
 		ne.registrerNabo(ue);
 		ue.registrerNabo(ne);
 		
-		// hent ut informasjon og sjekk
+		// hent ut informasjon og gjør noen enkle sjekk
 		assertEquals(ne,register.finnEiendom(10, 10));
 		
 		ArrayList<Eier> neeiere = register.finnEiendom(10, 10).getEiere();
