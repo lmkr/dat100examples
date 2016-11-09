@@ -76,7 +76,7 @@ public class GameController {
 
 		boolean allequal = true;
 
-		// TicTacToe.SIZE git størrelse på brettet
+		// TicTacToe.SIZE gir størrelse på brettet
 		// TODO - START
 
 		// sjekk om alle karakterer/innganger på rad y i
@@ -91,7 +91,7 @@ public class GameController {
 
 		boolean allequal = true;
 
-		// TicTacToe.SIZE git størrelse på brettet
+		// TicTacToe.SIZE gir størrelse på brettet
 
 		// TODO - START
 
