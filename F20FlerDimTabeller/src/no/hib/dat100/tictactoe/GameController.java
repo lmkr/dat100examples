@@ -25,56 +25,24 @@ public class GameController {
 		}
 	}
 
-	private boolean checkHorizontal(int y, char player) {
-		
-		boolean allequal = true;
-		
-		// TicTacToe.SIZE git størrelse på brettet
-		// TODO - START
-		
-		// sjekk om alle karakterer/innganger på rad y i 
-		// 2-dim tabellen board har karakteren player
-		
-		// TODO - SLUTT
-		
-		return allequal;
-	}
+	// check board given that field (x,y) has been selected by player
+	public char checkGameBoard(int x, int y, char player) {
+		char winner = ' ';
 
-	private boolean checkVertical(int x, char player) {
-		
-		boolean allequal = true;
-		
-		// TicTacToe.SIZE git størrelse på brettet
-		
-		// TODO - START
-		
-		// sjekk om alle karakterer/innganger på kolonne x i 
-	    // 2-dim tabellen board har karakteren player
-		
-		// TODO - SLUTT
-		
-		return allequal;
-	}
+		System.out.println("Updating Gameboard (" + x + "," + y + ") = " + player);
+		board[y][x] = player;
 
-	private boolean checkDiagonals(char player) {
-		
-		boolean allequal_lr = true; // for checking left to right diagonal
-		boolean allequal_rl = true; // for checking right to left diagonal
-		
-		// TicTacToe.SIZE gir størrelse på brettet
-		
-		// TODO - START
-		
-		// sjekk om alle karakterer/innganger på første diagonalen i 
-	    // 2-dim tabellen board har karakteren player
-		
-		// sjekk om alle karakterer/innganger på andre diagonalen i 
-	    // 2-dim tabellen board har karakteren player
-		
-		// TODO - SLUTT
-		
-		return allequal_lr || allequal_rl;
-		
+		System.out.println("Checking Gameboard");
+
+		if (checkGameBoardPlayer(TicTacToe.X_PLAYER_CHR)) {
+			winner = TicTacToe.X_PLAYER_CHR;
+		} else if (checkGameBoardPlayer(TicTacToe.O_PLAYER_CHR)) {
+			winner = TicTacToe.O_PLAYER_CHR;
+		}
+
+		System.out.println("Winner = " + winner);
+
+		return winner;
 	}
 
 	public boolean checkGameBoardPlayer(char player) {
@@ -104,24 +72,56 @@ public class GameController {
 		return gameover;
 	}
 
-	// check board given that field (x,y) has been selected by player
-	public char checkGameBoard(int x, int y, char player) {
-		char winner = ' ';
+	private boolean checkHorizontal(int y, char player) {
 
-		System.out.println("Updating Gameboard (" + x + "," + y + ") = "
-				+ player);
-		board[y][x] = player;
+		boolean allequal = true;
 
-		System.out.println("Checking Gameboard");
+		// TicTacToe.SIZE git størrelse på brettet
+		// TODO - START
 
-		if (checkGameBoardPlayer(TicTacToe.X_PLAYER_CHR)) {
-			winner = TicTacToe.X_PLAYER_CHR;
-		} else if (checkGameBoardPlayer(TicTacToe.O_PLAYER_CHR)) {
-			winner = TicTacToe.O_PLAYER_CHR;
-		}
+		// sjekk om alle karakterer/innganger på rad y i
+		// 2-dim tabellen board har karakteren player
 
-		System.out.println("Winner = " + winner);
+		// TODO - SLUTT
 
-		return winner;
+		return false; // allequal
 	}
+
+	private boolean checkVertical(int x, char player) {
+
+		boolean allequal = true;
+
+		// TicTacToe.SIZE git størrelse på brettet
+
+		// TODO - START
+
+		// sjekk om alle karakterer/innganger på kolonne x i
+		// 2-dim tabellen board har karakteren player
+
+		// TODO - SLUTT
+
+		return false; // allequal
+	}
+
+	private boolean checkDiagonals(char player) {
+
+		boolean allequal_lr = true; // for checking left to right diagonal
+		boolean allequal_rl = true; // for checking right to left diagonal
+
+		// TicTacToe.SIZE gir størrelse på brettet
+
+		// TODO - START
+
+		// sjekk om alle karakterer/innganger på første diagonalen i
+		// 2-dim tabellen board har karakteren player
+
+		// sjekk om alle karakterer/innganger på andre diagonalen i
+		// 2-dim tabellen board har karakteren player
+
+		// TODO - SLUTT
+
+		return false; // allequal_lr || allequal_rl;
+
+	}
+
 }
