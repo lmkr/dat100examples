@@ -14,7 +14,7 @@ public class Person {
 	public String toString() {
 		
 		return 
-				"navn  : " + navn + "\n" +
+				"navn  : " + navn + " " +
 				"epost : " + epost;
 	}
 }
