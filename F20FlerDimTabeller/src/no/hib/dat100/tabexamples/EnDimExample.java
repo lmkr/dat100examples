@@ -13,6 +13,6 @@ public class EnDimExample {
 		personer[5] = new Person("E", "d@person.com");
 		personer[6] = new Person("F", "f@person.com");
 		
-		// TODO: iterer over personer og skriv ut in for hver person
+		// TODO: iterer over personer og skriv ut info for hver person
 	}
 }
