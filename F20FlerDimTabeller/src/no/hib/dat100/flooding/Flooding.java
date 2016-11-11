@@ -20,8 +20,10 @@ public class Flooding {
 
 		int hav = 0;
 
+		Scanner in = new Scanner(System.in);
+		
 		while (hav >= 0) {
-			Scanner in = new Scanner(System.in);
+			
 
 			// TODO - START
 			
@@ -33,5 +35,7 @@ public class Flooding {
 			System.out.print("Hav høyde : ");
 			hav = in.nextInt();
 		}
+		
+		in.close();
 	}
 }
