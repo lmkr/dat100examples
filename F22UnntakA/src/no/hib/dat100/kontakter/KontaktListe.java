@@ -4,11 +4,11 @@ import java.util.HashMap;
 
 public class KontaktListe {
 
-	protected HashMap<String, KontaktInfo> kontakter; 
+	private HashMap<String, KontaktInfo> kontakter; 
 	// protected gjør kontakter synlig i subklasser
 	
 	public KontaktListe() {
-		this.kontakter = new HashMap<String, KontaktInfo>();
+		kontakter = new HashMap<String, KontaktInfo>();
 	}
 
 	public KontaktInfo finnKontaktInfo(String navn) {
