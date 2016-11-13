@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 public class LeseFraFil {
 
-	private static String MAPPE_STR = "c:/work/";
+	private static String MAPPE_STR = "/Users/hib/git/dat100examples/F22UnntakA/src/no/hib/dat100/lesinnfil/";
 
 	static public void main(String[] args) {
 
@@ -18,8 +18,7 @@ public class LeseFraFil {
 		filnavn = JOptionPane.showInputDialog("Filnavn i mappen " + MAPPE_STR);
 
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(MAPPE_STR
-					+ filnavn));
+			BufferedReader reader = new BufferedReader(new FileReader(MAPPE_STR + filnavn));
 
 			int linjenummer = 1;
 
@@ -35,14 +34,9 @@ public class LeseFraFil {
 			reader.close();
 
 		} catch (FileNotFoundException fexn) {
-
-			JOptionPane.showMessageDialog(null, "Filen " + filnavn
-					+ " finnes ikke. \n" + fexn.getMessage());
+			JOptionPane.showMessageDialog(null, "Filen " + filnavn + " finnes ikke. \n" + fexn.getMessage());
 		} catch (IOException ioexn) {
-			JOptionPane.showMessageDialog(
-					null,
-					"Problemer med å lese eller lukke fil.\n"
-							+ ioexn.getMessage());
+			JOptionPane.showMessageDialog(null, "Problemer med å lese eller lukke fil.\n" + ioexn.getMessage());
 		}
 		// rekkefolge av exceptions viktig her - subklassen først!
 	}

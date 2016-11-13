@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 public class LeseFraFilForsok {
 
-	private static String MAPPE_STR = "c:/work/";
+	private static String MAPPE_STR = "/Users/hib/git/dat100examples/F22UnntakA/src/no/hib/dat100/lesinnfil/";
 	private static int ANTALL_FORSOK = 3;
 
 	static public void main(String[] args) {
@@ -20,12 +20,10 @@ public class LeseFraFilForsok {
 
 		while (forsok <= ANTALL_FORSOK && !lestinn) {
 
-			filnavn = JOptionPane.showInputDialog("Filnavn i mappe ( " + forsok
-					+ ")" + ":");
+			filnavn = JOptionPane.showInputDialog("Filnavn i mappe ( " + forsok + ")" + ":");
 
 			try {
-				BufferedReader reader = new BufferedReader(new FileReader(
-						MAPPE_STR + filnavn));
+				BufferedReader reader = new BufferedReader(new FileReader(MAPPE_STR + filnavn));
 
 				int linjenummer = 1;
 
@@ -45,7 +43,7 @@ public class LeseFraFilForsok {
 				lestinn = true;
 
 			} catch (IOException exception) {
-				// valgt å håndtere alt med superklassen IOException
+				// valgt ï¿½ hï¿½ndtere alt med superklassen IOException
 				JOptionPane.showMessageDialog(null, "Problem med fil.");
 				forsok++;
 			}
