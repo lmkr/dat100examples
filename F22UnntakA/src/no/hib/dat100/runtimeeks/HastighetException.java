@@ -18,6 +18,8 @@ public class HastighetException {
 
 		} catch (NumberFormatException e) {
 			JOptionPane.showMessageDialog(null, "Ulovlig input: " + e.getMessage());
+		} catch (ArithmeticException e) {
+			JOptionPane.showMessageDialog(null, "0 ikke lovlig :" + e.getMessage());
 		}
 
 		System.out.println("Returnerer fra main().");
@@ -27,13 +29,9 @@ public class HastighetException {
 
 		System.out.println("Starter skrivHastighet().");
 
-		try {
-			int hastighet = beregnHastighet(kilometer, timer);
+		int hastighet = beregnHastighet(kilometer, timer);
 
-			JOptionPane.showMessageDialog(null, "Hastighet: " + kilometer + "/" + timer + " = " + hastighet);
-		} catch (ArithmeticException e) {
-			JOptionPane.showMessageDialog(null, "0 ikke lovlig :" + e.getMessage());
-		}
+		JOptionPane.showMessageDialog(null, "Hastighet: " + kilometer + "/" + timer + " = " + hastighet);
 
 		System.out.println("Returnerer fra skrivHastighet().");
 	}
