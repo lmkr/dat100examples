@@ -79,12 +79,17 @@ public class GameController {
 		// TicTacToe.SIZE gir størrelse på brettet
 		// TODO - START
 
+		char[] rad = board[y];
+
+		for (char p : rad) {
+			allequal = allequal && (p == player);
+		}
 		// sjekk om alle karakterer/innganger på rad y i
 		// 2-dim tabellen board har karakteren player
 
 		// TODO - SLUTT
 
-		return false; // allequal
+		return allequal;
 	}
 
 	private boolean checkVertical(int x, char player) {
@@ -94,13 +99,15 @@ public class GameController {
 		// TicTacToe.SIZE gir størrelse på brettet
 
 		// TODO - START
-
+		for (char[] rekke : board) {
+			allequal = allequal && (rekke[x] == player);
+		}
 		// sjekk om alle karakterer/innganger på kolonne x i
 		// 2-dim tabellen board har karakteren player
 
 		// TODO - SLUTT
 
-		return false; // allequal
+		return allequal;
 	}
 
 	private boolean checkDiagonals(char player) {
@@ -111,16 +118,24 @@ public class GameController {
 		// TicTacToe.SIZE gir størrelse på brettet
 
 		// TODO - START
-
 		// sjekk om alle karakterer/innganger på første diagonalen i
 		// 2-dim tabellen board har karakteren player
+		for (int y = 0; y < board.length; y++) {
+			allequal_lr = allequal_lr && (board[y][y] == player);
+		}
 
+		for (int y = 0; y < board.length; y++) {
+			char[] rekke = board[y];
+			char p = rekke[TicTacToe.SIZE - 1 - y];
+
+			allequal_rl = allequal_rl && (p == player);
+		}
 		// sjekk om alle karakterer/innganger på andre diagonalen i
 		// 2-dim tabellen board har karakteren player
 
 		// TODO - SLUTT
 
-		return false; // allequal_lr || allequal_rl;
+		return allequal_lr || allequal_rl;
 
 	}
 
