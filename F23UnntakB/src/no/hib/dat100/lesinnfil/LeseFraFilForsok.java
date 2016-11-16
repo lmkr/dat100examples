@@ -43,7 +43,7 @@ public class LeseFraFilForsok {
 				lestinn = true;
 
 			} catch (IOException exception) {
-				// valgt � h�ndtere alt med superklassen IOException
+				// her valgt å håndtere alle unntak via match med superklassen IOException
 				JOptionPane.showMessageDialog(null, "Problem med fil.");
 				forsok++;
 			}

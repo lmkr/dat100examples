@@ -22,7 +22,7 @@ public class LeseFraFil {
 
 			int linjenummer = 1;
 
-			// les innhold i filen linje for linje
+			// les innhold i filen linje for linje - kunne også ha brukt do-while
 			String linje = reader.readLine();
 
 			while (linje != null) {
