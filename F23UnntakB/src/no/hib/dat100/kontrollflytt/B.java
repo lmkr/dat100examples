@@ -6,10 +6,10 @@ public class B {
 
 		C c = new C();
 		
-		System.out.println("main: før c.mC");
+		System.out.println("main: kalder c.mC");
 		
 		c.mC();
 
-		System.out.println("main: etter c.mC");
+		System.out.println("main: returnerer");
 	}
 }

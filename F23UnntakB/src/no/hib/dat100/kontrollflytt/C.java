@@ -6,8 +6,10 @@ public class C {
 
 		D d = new D();
 
-		System.out.println("mC: før d.mD");
+		System.out.println("mC: kalder d.mD");
+		
 		d.mD();
-		System.out.println("mC: etter d.mD");
+		
+		System.out.println("mC: returnerer");
 	}
 }
